@@ -1,0 +1,58 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react-hooks", "react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "camelcase": "off",
+    "prettier/prettier": "error",
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-unused-vars": "off",
+    "react/prop-types": "off",
+    "arrow-parens": "off",
+    "react/jsx-props-no-spreading": "off",
+    "object-curly-newline": "off",
+    "no-use-before-define": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/ban-types": "off",
+
+    "indent":"off",
+    "function-paren-newline":"off",
+    "import/no-duplicates":"off",
+    "no-confusing-arrow": "off",
+    "react/jsx-curly-newline": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
